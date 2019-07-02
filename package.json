@@ -1,12 +1,12 @@
 {
   "name": "reliability-react",
-  "author": "oSoc19 realibility score team",
-  "description": "Realibility score Infrabel React front end",
+  "author": "oSoc19 reliability score team",
+  "description": "Reliability score Infrabel React front end",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/realibility-score/issues"    
+    "url": "https://github.com/osoc19/reliability-score-frontend/issues"    
   },
   "dependencies": {
     "antd": "^3.20.0",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oSoc19/frontend-realibility-score"
+    "url": "git+https://github.com/oSoc19/reliability-score-frontend"
   },
-  "homepage": "https://github.com/oSoc19/frontend-realibility-score"
+  "homepage": "https://github.com/oSoc19/reliability-score-frontend"
 }
