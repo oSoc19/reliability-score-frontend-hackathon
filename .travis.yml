@@ -6,7 +6,7 @@ cache:
   - node_modules
 script:
   - cd src
-  - yarn run install
+  - yarn install
   - yarn run build
 deploy:
   provider: pages
