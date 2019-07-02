@@ -1,3 +1,18 @@
+# Reliability Score: front end
+
+## Build status
+
+| `develop` | `master` |
+| --------- | -------- |
+| [![Build Status](https://travis-ci.org/oSoc19/reliability-score-frontend.svg?branch=develop)](https://travis-ci.org/oSoc19/reliability-score-frontend) | [![Build Status](https://travis-ci.org/oSoc19/reliability-score-frontend.svg?branch=master)](https://travis-ci.org/oSoc19/reliability-score-frontend) |
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
