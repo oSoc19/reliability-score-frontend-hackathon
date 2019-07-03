@@ -114,6 +114,37 @@
     padding: 0;
 }
 
+.last-direction-notice {
+    margin: 1.75%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.last-direction-notice:hover {
+    color: white;
+    background-color: orange;
+}
+
+.last-direction-notice:hover p {
+    color: white;
+}
+
+.last-direction-notice-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/orange-warning.png');
+    background-size: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.last-direction-notice:hover .last-direction-notice-icon {
+    background-image: url('./images/white-warning.png');
+}
+
 .graph-container {
     display: flex;
     flex-direction: row;     /* make main axis horizontal (default setting) */

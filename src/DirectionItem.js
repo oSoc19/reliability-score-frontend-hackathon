@@ -7,6 +7,17 @@ import DirectionChart from './DirectionChart.js'
 
 
 class DirectionItem extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            chartVisible: false,
+        };
+    }
+
+    toggleChart() {
+        this.setState(prevState => ({ chartVisible: !prevState.chartVisible }));
+    }
+
     render() {
         return (
             <div className='direction-item'>
@@ -56,12 +67,14 @@ class DirectionItem extends Component {
                             
                         </Timeline>
 
-                        <div className='last-direction-notice'>
-                            <img src={OrangeWarningIcon} alt='delay information' />
+                        <div className='last-direction-notice' onClick={() => this.toggleChart()} >
+		            <div className='last-direction-notice-icon'  />
                             <p>You will probably arrive too late with approximately 16 - 20 min. delay</p>
                         </div>
 
-			<DirectionChart />
+                        {
+                            this.state.chartVisible? <DirectionChart />: null
+                        }
                     </div>
                 </div>
             </div>
@@ -69,4 +82,4 @@ class DirectionItem extends Component {
     }
 }
 
-export default DirectionItem
+export default DirectionItem;
