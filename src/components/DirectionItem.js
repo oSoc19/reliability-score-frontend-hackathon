@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import propTypes from 'prop-types'
 import { Timeline } from 'antd'
-import OrangeWarningIcon from './images/orange-warning.png'
-import WhiteWarningIcon from './images/white-warning.png'
+import OrangeWarningIcon from '../images/orange-warning.png'
+import WhiteWarningIcon from '../images/white-warning.png'
 
 class DirectionItem extends Component {
     render() {
