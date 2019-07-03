@@ -3,6 +3,10 @@ import propTypes from 'prop-types'
 import { Timeline } from 'antd'
 import OrangeWarningIcon from './images/orange-warning.png'
 import WhiteWarningIcon from './images/white-warning.png'
+import { AreaChart } from 'react-chartkick';
+import 'chart.js';
+import './chart-options.js';
+
 
 class DirectionItem extends Component {
     render() {
@@ -59,6 +63,9 @@ class DirectionItem extends Component {
                             <p>You will probably arrive too late with approximately 16 - 20 min. delay</p>
                         </div>
                     </div>
+		    <div>
+		        <AreaChart suffix=' %' xtitle='Station' ytitle='Delay probability' data={[["Vilvoorde", 87], ["Brussel-Zuid", 59], ["Gent-Sint-Pieters", 68]]} />
+		    </div>
                 </div>
             </div>
         )

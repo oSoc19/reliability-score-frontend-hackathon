@@ -6,11 +6,13 @@
   "private": true,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/osoc19/reliability-score-frontend/issues"    
+    "url": "https://github.com/osoc19/reliability-score-frontend/issues"
   },
   "dependencies": {
     "antd": "^3.20.0",
+    "chart.js": "^2.8.0",
     "react": "^16.8.6",
+    "react-chartkick": "^0.3.1",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
