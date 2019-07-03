@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import propTypes from 'prop-types'
 import DirectionItem from './DirectionItem';
 
 class DirectionCollection extends Component {
