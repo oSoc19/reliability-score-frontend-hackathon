@@ -13,7 +13,7 @@ class DirectionCollection extends Component {
 
     componentDidMount() {
         for(let i=0; i < 5; i++) {
-            fetch("http://127.0.0.1:8000/delay/station")
+            fetch("https://stunning-voyageurs-87289.herokuapp.com/delay/station")
             .then( response => response.json())
             .then(
                 // Handle the result
