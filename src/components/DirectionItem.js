@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Timeline } from 'antd'
-import WhiteWarningIcon from './images/white-warning.png'
-import DirectionChart from './DirectionChart.js'
-
+import OrangeWarningIcon from '../images/orange-warning.png'
+import WhiteWarningIcon from '../images/white-warning.png'
 
 class DirectionItem extends Component {
     constructor(props) {
