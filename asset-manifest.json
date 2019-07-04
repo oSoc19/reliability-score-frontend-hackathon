@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/reliability-score-frontend/static/css/main.87443471.chunk.css",
+    "main.js": "/reliability-score-frontend/static/js/main.6227c39e.chunk.js",
+    "main.js.map": "/reliability-score-frontend/static/js/main.6227c39e.chunk.js.map",
+    "runtime~main.js": "/reliability-score-frontend/static/js/runtime~main.98b61564.js",
+    "runtime~main.js.map": "/reliability-score-frontend/static/js/runtime~main.98b61564.js.map",
+    "static/css/2.41a373cd.chunk.css": "/reliability-score-frontend/static/css/2.41a373cd.chunk.css",
+    "static/js/2.9e45b5e9.chunk.js": "/reliability-score-frontend/static/js/2.9e45b5e9.chunk.js",
+    "static/js/2.9e45b5e9.chunk.js.map": "/reliability-score-frontend/static/js/2.9e45b5e9.chunk.js.map",
+    "index.html": "/reliability-score-frontend/index.html",
+    "precache-manifest.a0fea5fb3c8ed7bd56005dbabf9d74bb.js": "/reliability-score-frontend/precache-manifest.a0fea5fb3c8ed7bd56005dbabf9d74bb.js",
+    "service-worker.js": "/reliability-score-frontend/service-worker.js",
+    "static/css/2.41a373cd.chunk.css.map": "/reliability-score-frontend/static/css/2.41a373cd.chunk.css.map",
+    "static/css/main.87443471.chunk.css.map": "/reliability-score-frontend/static/css/main.87443471.chunk.css.map",
+    "static/media/index.css": "/reliability-score-frontend/static/media/icomoon.f8978700.svg",
+    "static/media/logo.png": "/reliability-score-frontend/static/media/logo.20e5e808.png"
+  }
+}
