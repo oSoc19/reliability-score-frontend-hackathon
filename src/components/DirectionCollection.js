@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import DirectionItem from './DirectionItem';
 
 class DirectionCollection extends Component {
-  constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             error: null,
@@ -12,6 +12,7 @@ class DirectionCollection extends Component {
     }
 
     componentDidMount() {
+
         for(let i=0; i < 5; i++) {
             fetch("https://stunning-voyageurs-87289.herokuapp.com/delay/station")
             .then( response => response.json())
@@ -24,24 +25,24 @@ class DirectionCollection extends Component {
                     }));
                 },
 
-                // Handle error 
-                (error) => {
-                    this.setState({
-                        isReady: true,
-                        error: 'Error occurred while fetching the data!'
-                    })
-                },
-            )
+                    // Handle error 
+                    (error) => {
+                        this.setState({
+                            isReady: true,
+                            error: 'Error occurred while fetching the data!'
+                        })
+                    },
+                )
         }
     }
 
     render() {
-        const {error, isReady, predictions} = this.state;
-        if(error) {
+        const { error, isReady, predictions } = this.state;
+        if (error) {
             console.log("Error loading");
             return <div>Error!</div>
         }
-        else if(!isReady) {
+        else if (!isReady) {
             console.log("Loading data...");
             return <div>Loading...</div>
         }
@@ -50,8 +51,8 @@ class DirectionCollection extends Component {
             return (
                 <div className='direction-collection'>
                     {
-                        predictions.map(prediction =>( 
-                            <DirectionItem delay_probability={prediction.delay_probability} average_delay={prediction.average_delay} />
+                        predictions.map((prediction, index) => (
+                            <DirectionItem key={index} delay_probability={prediction.delay_probability} average_delay={prediction.average_delay} />
                         ))
                     }
                 </div>

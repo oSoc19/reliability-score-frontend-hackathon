@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import Header from './Header';
-import SearchPanel from './SearchPanel';
-import PlannerPanel from './PlannerPanel';
+import Header from './Header'
+import SearchPanel from './SearchPanel'
+import PlannerPanel from './PlannerPanel'
 
 class Layout extends Component {
     render() {
@@ -25,6 +25,7 @@ class Layout extends Component {
             <Fragment>
                 <Header withBackButton={withBackButton} />
 
+                
                 {currentComponent}
             </Fragment>
         )

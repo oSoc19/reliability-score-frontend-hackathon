@@ -1,6 +1,6 @@
 .content.search-panel h2:first-of-type {
     font-weight: 600;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .content.search-panel form span.title-form {
@@ -9,10 +9,26 @@
     font-weight: 500;
     display: block;
     margin-bottom: 5px;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 .content.search-panel form button {
-    margin-top:30px;
-    width:100%;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.content.search-panel .time-form {
+    display: flex;
+}
+
+@media only screen and (max-width: 999px) {
+    .content.search-panel .time-form {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .content.search-panel .time-form .item {
+        margin-right: 50px;
+    }
 }
