@@ -21,9 +21,13 @@ class DirectionItem extends Component {
                 <h2>Vilvoorde → Gent-Sint-Pieters</h2>
 
                 <div className='details'>
-                    <div className='important-sign'>
-                        <img src={WhiteWarningIcon} alt='important notice' />
-                    </div>
+                    {
+                        this.props.delay_probability > 20?
+                        <div className='important-sign'>
+                            <img src={WhiteWarningIcon} alt='important notice' />
+                        </div>
+                        : null
+                    }
 
                     <div className='inside-content'>
                         <Timeline>
@@ -32,12 +36,12 @@ class DirectionItem extends Component {
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>5</b></p>
+                                        <p>Platform <b>5</b></p>
                                     </div>
 
                                     <div className='to'>
                                         <p>15:12</p>
-                                        <p>Plateform <b>11</b></p>
+                                        <p>Platform <b>11</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
@@ -47,30 +51,36 @@ class DirectionItem extends Component {
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>14</b></p>
+                                        <p>Platform <b>14</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
 
-                            <Timeline.Item color="orange">
+                            <Timeline.Item color={this.props.delay_probability > 20? "orange": "blue"}>
                                 <h3>Gent-Sint-Pieters</h3>
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>3</b></p>
+                                        <p>Platform <b>3</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
                             
                         </Timeline>
 
-                        <div className='last-direction-notice' onClick={() => this.toggleChart()} >
-		            <div className='last-direction-notice-icon'  />
-                            <p>You will probably arrive too late with approximately 16 - 20 min. delay</p>
-                        </div>
-
                         {
-                            this.state.chartVisible? <DirectionChart />: null
+                            this.props.delay_probability > 20? 
+                            <div>
+                                <div className='last-direction-notice' onClick={() => this.toggleChart()} >
+		                                <div className='last-direction-notice-icon'  />
+                                    <p>You <b>{this.props.delay_probability > 50? 'will probably': 'might'}</b> arrive too late with approximately <b>{this.props.average_delay} min.</b> delay.</p>
+                                </div>
+
+                                {
+                                    this.state.chartVisible? <DirectionChart />: null
+                                }
+                            </div>
+                            : null
                         }
                     </div>
                 </div>
