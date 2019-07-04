@@ -1,0 +1,115 @@
+.direction-collection {
+    width: 100%;
+}
+
+.direction-collection .direction-item {
+    margin: 10px 0;
+}
+
+.direction-collection .direction-item h2 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.direction-collection .direction-item .details {
+    background: #f8f9fe;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #DBDCE0;
+}
+
+.direction-collection .direction-item .details .important-sign {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent orange transparent transparent;
+    margin-left: calc(100% - 50px);
+    margin-bottom: -40px;
+}
+
+.direction-collection .direction-item .details .important-sign img {
+    width: 20px;
+    height: 20px;
+    margin-left: 26px;
+    margin-top: 6px;
+}
+
+.ant-steps-item-process>.ant-steps-item-tail::after {
+    background: #1890ff;
+}
+
+.direction-collection .direction-item .details .ant-timeline-item-content h3 {
+    font-size: 20px;
+}
+
+.direction-collection .direction-item .details .station-informations div {
+    display: flex;
+}
+
+@media only screen and (max-width: 999px) {
+    .direction-collection .direction-item .details .station-informations div {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .direction-collection .direction-item .details .station-informations div p {
+        margin-right: 20px;
+    }
+    .direction-collection .direction-item .details .station-informations div p:last-of-type {
+        margin-right: 0px;
+    }
+}
+
+.direction-collection .direction-item .details .station-informations div.to {
+    margin-top: 15px;
+}
+
+.direction-collection .direction-item .details .station-informations p {
+    font-size: 15px;
+}
+
+.ant-timeline-item-head {
+    width: 20px;
+    height: 20px;
+}
+
+.ant-timeline-item-content {
+    margin-left: 30px;
+}
+
+.ant-timeline-item-tail {
+    left: 9px;
+}
+
+.ant-timeline-item {
+    padding: 0;
+}
+
+.direction-collection .direction-item .details .last-direction-notice {
+    color: orange;
+    overflow: hidden;
+}
+
+.direction-collection .direction-item .details .last-direction-notice img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 999px) {
+    .direction-collection .direction-item .details .last-direction-notice img {
+        margin-top: 5px;
+    }
+}
+
+.direction-collection .direction-item .details .last-direction-notice p {
+    float: left;
+    width: calc(100% - 30px);
+    margin: 0;
+    padding: 0;
+}
