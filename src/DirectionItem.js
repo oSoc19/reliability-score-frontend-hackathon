@@ -37,12 +37,12 @@ class DirectionItem extends Component {
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>5</b></p>
+                                        <p>Platform <b>5</b></p>
                                     </div>
 
                                     <div className='to'>
                                         <p>15:12</p>
-                                        <p>Plateform <b>11</b></p>
+                                        <p>Platform <b>11</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
@@ -52,7 +52,7 @@ class DirectionItem extends Component {
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>14</b></p>
+                                        <p>Platform <b>14</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
@@ -62,7 +62,7 @@ class DirectionItem extends Component {
                                 <div className='station-informations'>
                                     <div className='from'>
                                         <p>15:09</p>
-                                        <p>Plateform <b>3</b></p>
+                                        <p>Platform <b>3</b></p>
                                     </div>
                                 </div>
                             </Timeline.Item>
@@ -74,7 +74,7 @@ class DirectionItem extends Component {
                             <div>
                                 <div className='last-direction-notice' onClick={() => this.toggleChart()} >
 		                                <div className='last-direction-notice-icon'  />
-                                    <p>You will probably ({this.props.delay_probability} %) arrive too late with approximately {this.props.average_delay} min. delay</p>
+                                    <p>You <b>{this.props.delay_probability > 50? 'will probably': 'might'}</b> arrive too late with approximately <b>{this.props.average_delay} min.</b> delay.</p>
                                 </div>
 
                                 {
