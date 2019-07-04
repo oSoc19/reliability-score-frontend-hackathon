@@ -1,0 +1,53 @@
+header {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+}
+
+header .header-back-btn {
+    float: left;
+    margin-top: 5px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #E2E8ED;
+    cursor: pointer;
+}
+
+header .logo {
+    float: left;
+    overflow: hidden;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+header .header-back-btn:hover .icon-arrow-left:before {
+    color: #025aa0;
+}
+
+.icon-arrow-left:before {
+    content: "\e901";
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: #bdc3c7;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
