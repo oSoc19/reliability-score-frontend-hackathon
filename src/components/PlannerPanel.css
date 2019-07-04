@@ -135,14 +135,14 @@
 .last-direction-notice-icon {
     width: 20px;
     height: 20px;
-    background-image: url('./images/orange-warning.png');
+    background-image: url('../images/orange-warning.png');
     background-size: 20px;
     float: left;
     margin-right: 10px;
 }
 
 .last-direction-notice:hover .last-direction-notice-icon {
-    background-image: url('./images/white-warning.png');
+    background-image: url('../images/white-warning.png');
 }
 
 .graph-container {

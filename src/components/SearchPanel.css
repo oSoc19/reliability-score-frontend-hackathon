@@ -1,0 +1,18 @@
+.content.search-panel h2:first-of-type {
+    font-weight: 600;
+    font-size:30px;
+}
+
+.content.search-panel form span.title-form {
+    font-size: 14px;
+    color: #025aa0;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    margin-top:15px;
+}
+
+.content.search-panel form button {
+    margin-top:30px;
+    width:100%;
+}
