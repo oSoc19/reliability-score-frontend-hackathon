@@ -22,9 +22,13 @@ class DirectionItem extends Component {
                 <h2>Vilvoorde → Gent-Sint-Pieters</h2>
 
                 <div className='details'>
-                    <div className='important-sign'>
-                        <img src={WhiteWarningIcon} alt='important notice' />
-                    </div>
+                    {
+                        this.props.delay_probability > 20?
+                        <div className='important-sign'>
+                            <img src={WhiteWarningIcon} alt='important notice' />
+                        </div>
+                        : null
+                    }
 
                     <div className='inside-content'>
                         <Timeline>
@@ -53,7 +57,7 @@ class DirectionItem extends Component {
                                 </div>
                             </Timeline.Item>
 
-                            <Timeline.Item color="orange">
+                            <Timeline.Item color={this.props.delay_probability > 20? "orange": "blue"}>
                                 <h3>Gent-Sint-Pieters</h3>
                                 <div className='station-informations'>
                                     <div className='from'>
@@ -65,13 +69,19 @@ class DirectionItem extends Component {
                             
                         </Timeline>
 
-                        <div className='last-direction-notice' onClick={() => this.toggleChart()} >
-		            <div className='last-direction-notice-icon'  />
-                            <p>You will probably arrive too late with approximately 16 - 20 min. delay</p>
-                        </div>
-
                         {
-                            this.state.chartVisible? <DirectionChart />: null
+                            this.props.delay_probability > 20? 
+                            <div>
+                                <div className='last-direction-notice' onClick={() => this.toggleChart()} >
+		                                <div className='last-direction-notice-icon'  />
+                                    <p>You will probably ({this.props.delay_probability} %) arrive too late with approximately {this.props.average_delay} min. delay</p>
+                                </div>
+
+                                {
+                                    this.state.chartVisible? <DirectionChart />: null
+                                }
+                            </div>
+                            : null
                         }
                     </div>
                 </div>
