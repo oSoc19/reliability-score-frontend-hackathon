@@ -1,5 +1,4 @@
 /* FONTS */
-
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600&display=swap');
 @font-face {
     font-family: 'icomoon';
@@ -21,6 +20,10 @@ html, body {
 .content {
     margin: auto;
     font-family: 'Work Sans', sans-serif;
+}
+
+.content.global {
+    padding-top:80px;
 }
 
 .shadow {

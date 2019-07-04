@@ -5,7 +5,7 @@ import './SearchPanel.css'
 class SearchPanel extends Component {
     render() {
         return (
-            <div className='content'>
+            <div className='content global'>
                 <Link to='/planner/'><h1>Click here to go to the next page</h1></Link>
             </div>
         )

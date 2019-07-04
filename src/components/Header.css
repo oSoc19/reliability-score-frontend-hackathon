@@ -3,6 +3,8 @@ header {
     margin-bottom: 20px;
     padding: 10px;
     overflow: hidden;
+    position: fixed;
+    width:100%;
 }
 
 header .header-back-btn {

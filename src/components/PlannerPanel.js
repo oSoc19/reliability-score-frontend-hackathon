@@ -5,7 +5,7 @@ import DirectionCollection from './DirectionCollection';
 class PlannerPanel extends Component {
     render() {
         return (
-            <div className='content'>
+            <div className='content global'>
                 <DirectionCollection />
             </div>
         )
