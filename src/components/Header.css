@@ -5,6 +5,7 @@ header {
     overflow: hidden;
     position: fixed;
     width:100%;
+    z-index: 900;
 }
 
 header .header-back-btn {

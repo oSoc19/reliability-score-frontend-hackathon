@@ -11,6 +11,10 @@ class SearchPanel extends Component {
         redirect: false
     }
 
+    componentWillMount = () => {
+        document.title = 'Reliability Score - Prepare your delay'
+    }
+
     handleFetchDirection = () => {
         this.setState({
             loading : true

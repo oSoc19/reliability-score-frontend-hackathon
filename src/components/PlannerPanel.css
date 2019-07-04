@@ -92,6 +92,7 @@
 .direction-collection .direction-item .details .last-direction-notice {
     color: orange;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .direction-collection .direction-item .details .last-direction-notice img {
