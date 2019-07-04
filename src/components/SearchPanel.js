@@ -66,7 +66,7 @@ class SearchPanel extends Component {
 
                         <div className='item'>
                             <span className='title-form'>AT</span>
-                            <TimePicker format='HH:mm' />
+                            <TimePicker defaultValue={moment(new Date(), 'HH:mm')} format='HH:mm' minuteStep={10} />
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@
 }
 
 .direction-collection .direction-item {
-    margin: 10px 0;
+    margin: 10px 0 40px;
 }
 
 .direction-collection .direction-item h2 {
@@ -116,7 +116,7 @@
 }
 
 .last-direction-notice {
-    margin: 1.75%;
+    margin:  0 10px 10px 10px;
     padding: 1%;
     border-style: solid;
     border-width: 1px;
