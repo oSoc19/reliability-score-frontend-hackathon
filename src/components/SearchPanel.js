@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
-import { AutoComplete, Button } from 'antd'
+import { AutoComplete, Button, DatePicker, TimePicker } from 'antd'
+import moment from 'moment'
 import './SearchPanel.css'
 
 const dataSource = ['Antwerpen', 'Gent-Sint-Pieters']
@@ -11,9 +12,13 @@ class SearchPanel extends Component {
         redirect: false
     }
 
+    componentWillMount = () => {
+        document.title = 'Reliability Score - Prepare your delay'
+    }
+
     handleFetchDirection = () => {
         this.setState({
-            loading : true
+            loading: true
         })
 
         // Do something
@@ -27,7 +32,7 @@ class SearchPanel extends Component {
     }
 
     render() {
-        if(this.state.redirect)
+        if (this.state.redirect)
             return <Redirect to='/planner/'></Redirect>
 
         return (
@@ -52,6 +57,18 @@ class SearchPanel extends Component {
                             option.props.children.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
                         }
                     />
+
+                    <div className='time-form'>
+                        <div className='item'>
+                            <span className='title-form'>WHEN</span>
+                            <DatePicker defaultValue={moment(new Date(), 'DD/MM/YYYY')} format='DD/MM/YYYY' />
+                        </div>
+
+                        <div className='item'>
+                            <span className='title-form'>AT</span>
+                            <TimePicker format='HH:mm' />
+                        </div>
+                    </div>
 
                     <Button onClick={this.handleFetchDirection} type="primary" loading={this.state.loading}>{this.state.loading ? 'Please wait' : 'Let\' plan !'}</Button>
                 </form>
